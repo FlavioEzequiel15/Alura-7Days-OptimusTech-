@@ -1,0 +1,46 @@
+.anuncio__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.anuncio__descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.anuncio__abertas {
+    font-weight: 500;
+    line-height: 1.25rem;
+    border-radius: 1rem;
+    padding: .25rem .75rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+    background: var(--cor-opaca-secundaria);
+
+}
+
+.anuncio__titulo {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+}
+
+.anuncio__texto {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: var(--cor-opaca);
+}
+
+.anuncio__section img {
+    width: 84%;
+}
+
+@media screen and (max-width: 720px) {
+    .anuncio__section {
+        text-align: center;
+    }
+}

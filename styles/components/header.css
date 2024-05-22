@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: .75rem 0;
+}
+
+.header__logo, .header__links, .header__login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__links a, .header__login .login__entrar, .header__login .login__cadastrar {
+    text-decoration: none;
+}
+
+.header__logo {
+    gap: .5rem;
+}
+
+.header__titulo {
+    color: var(--cor-texto);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.header__links {
+    gap: 2rem;
+}
+
+.header__links a {
+    font-weight: 500;
+    color: var(--cor-texto);
+}
+
+.hamburguer__links ,.header__opcoes, .opcoes__botao, .header__opcoes-links, .hamburguer__logo_input {
+    display: none;
+}
+
+.header__span {
+    width: 142px;
+}
+
+.header__login {
+    gap: .75rem;
+}
+
+.header__login .login__entrar {
+    font-weight: 500;
+    padding: .625rem 1.125rem;
+    color: var(--cor-texto);
+}
+
+.header__login .login__cadastrar {
+    font-weight: 500;
+    padding: .625rem 1.125rem;
+    border-radius: .5rem;
+    color: var(--cor-fundo);
+    background: var(--cor-secundaria);
+    text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .header__links {
+        display: none;
+    }
+
+    .header__opcoes {
+        display: block;
+    }
+
+    .header__opcoes-links {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .opcoes__botao:checked ~ .header__opcoes-links{
+        display: block;
+    }
+
+    .header__opcoes-links a {
+        text-decoration: none;
+        color: var(--cor-primaria);
+    }
+
+    .header__opcoes-links a:hover {
+        font-weight: 600;
+    }
+    
+    .header__span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hamburguer__div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hamburguer__logo_input:checked ~ .hamburguer__links {
+        display: block;
+    }
+    
+    .hamburguer__links {
+        left: 15%;
+        top: 4%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .hamburguer__links a {
+        text-decoration: none;
+    }
+
+    .header__opcoes {
+        display: none;
+    }
+}

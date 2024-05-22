@@ -1,0 +1,52 @@
+.participacao__section .participacao__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.participacao__section li {
+    width: 16%;
+}
+
+.participacao__numeros {
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    letter-spacing: -2%;
+    color: var(--cor-secundaria);
+}
+
+.participacao__titulo {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--cor-primaria);
+}
+
+.participacao__texto {
+    color: var(--cor-opaca);
+}
+
+@media screen and (max-width: 1400px) {
+    .participacao__section .participacao__lista {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .participacao__section li {
+        width: 33.4%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .participacao__section .participacao__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .participacao__section li {
+        width: 40%;
+    }
+}

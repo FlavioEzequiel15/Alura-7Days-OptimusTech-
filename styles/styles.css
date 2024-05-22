@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url(components/header.css);
+@import url(components/sobre-nos.css);
+@import url(components/participacao.css);
+@import url(components/anuncio.css);
+@import url(components/vagas.css);
+@import url(components/opiniao.css);
+@import url(components/acompanhe.css);
+
+:root {
+    --cor-texto: #3A404E;
+    --cor-primaria: #101828;
+    --cor-secundaria: #8E2424;
+    --cor-opaca-secundaria:#8E24240D;
+    --cor-fundo: #FFF;
+    --cor-fundo-secundaria: #C3191908;
+    --cor-fundo-terciaria: #F9FAFB;
+    --cor-opaca: #667085;
+    --cor-direitos: #98A2B3;
+    --cor-borda: #EAECF0;
+    --cor-borda-input: #1018280D;
+
+    --fonte-principal: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 6rem 0;
+}
+
+.anuncio__vagas__main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    gap: 4rem
+}
+
+@media screen and (max-width: 720px) {
+    .anuncio__vagas__main {
+        padding-top: 0;
+    }
+}

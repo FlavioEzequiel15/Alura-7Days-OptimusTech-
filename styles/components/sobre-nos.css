@@ -1,0 +1,41 @@
+.nos__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nos__descricao {
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.nos__titulo {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: var(--cor-primaria);
+}
+
+.nos__texto {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    text-align: center;
+    width: 55%;
+    color: var(--cor-opaca);
+}
+
+@media screen and (max-width: 720px) {
+    .nos__section {
+        text-align: center;
+    }
+
+    .nos__titulo {
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+    }
+
+    .nos__texto {
+        width: 70%;
+    }
+}
